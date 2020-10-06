@@ -1,0 +1,270 @@
+\documentclass[11pt]{beamer}
+\usepackage{listings} % Include the listings-package
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb, amsfonts, latexsym, cancel}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%\usepackage{authblk}
+\usepackage{blindtext}
+\usepackage{booktabs} % Allows the use of \toprule, 
+\usepackage{filecontents}
+\usepackage{courier} %% Sets font for listing as Courier.
+\usepackage{listings}
+%\usepackage{listings, xcolor}
+\lstset{
+tabsize = 2, %% set tab space width
+showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+numbers = left, %% display line numbers on the left
+commentstyle = \color{green}, %% set comment color
+keywordstyle = \color{blue}, %% set keyword color
+stringstyle = \color{red}, %% set string color
+rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+basicstyle = \small \ttfamily , %% set listing font and size
+breaklines = true, %% enable line breaking
+numberstyle = \tiny,
+}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\definecolor{urlColor}{rgb}{0.06, 0.3, 0.57}
+\definecolor{linkColor}{rgb}{0.57, 0.0, 0.04}
+\definecolor{fileColor}{rgb}{0.0, 0.26, 0.26}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkColor,
+    filecolor=fileColor,      
+    urlcolor=urlColor,
+}
+\urlstyle{same}
+\setbeamercovered{transparent}
+%\usetheme{Boadilla}
+\usetheme{CambridgeUS}
+%\usetheme{Berkeley}
+%\usetheme{Warsaw}
+%\usetheme{Madrid}
+
+\title[Presentación]{\bf\Huge Diseño de Software Interactivo Educativo Inclusivo}
+\subtitle{Iteración Humano Computador 2020}
+
+\author[IHC2020]
+{
+	Marco Antonio Mendoza Rodríguez \\
+    Luis Fernando Quispe Sanomamani\\
+    Christopher Brad Del Castillo Montoya\\
+    Fatima Gigi Rojas Carhuas\\
+}
+\institute[UNSA]
+{
+\inst{1}% 
+Universidad Nacional de San Agustin\\
+Escuela Profesional de Ingenieria de Sistemas
+}
+
+\date[2020-10-05]{\scriptsize{2020-10-05}}
+%\logo{\includegraphics[width=3.0cm]{img/logo_unsa.jpg}}
+\titlegraphic{\includegraphics[width=1.0cm]{img/unsa.jpg}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Content}
+\tableofcontents
+\end{frame}
+
+\section{Educación Inclusiva}
+\begin{frame}
+\frametitle{Educación Inclusiva}
+\begin{itemize}
+\item Es aquella que se organiza con la intención de responder a todas las necesidades e intereses, se adapta a los ritmos de aprendizaje y tiene en cuenta las potencialidades del alumnado
+
+\end{itemize}
+\end{frame}
+
+
+\section{Discapacidad}
+\begin{frame}
+\frametitle{Discapacidad}
+De acuerdo con la clasificación Internacional del funcionamiento, de la discapacidad y de la salud, presenta en 2001, las personas con discapacidad “Son aquellas que tienen una o más deficiencias físicas, mentales, intelectuales o sensoriales y que la interactuar con distintos ambientes del entorno social pueden impedir su participación plena y efectiva en igualdad de condiciones a las demás”.
+\end{frame}
+
+
+\section{Tipos de Problemas de Aprendizaje}
+\begin{frame}
+\frametitle{Tipos de Problemas de Aprendizaje}
+\begin{itemize}
+\item Dislexia
+\item Disgrafia
+\item Discalculía
+\item Discapacidad de Memoria
+\item TDHA
+\item Trastorno del espectro autista
+\item Discapacidad Intelectual
+\end{itemize}
+\end{frame}
+
+
+\section{USAER}
+\begin{frame}
+\frametitle{USAER (Unidad de Servicio de Apoyo en la Educación Regular)}
+Programa educativo del Ministerio de Educación de México que a través de un equipo multidisciplinario (analista, psicólogos, maestros, tecnólogos) que ayuda al maestro titular que sirve para poder identificar necesidades especiales de aprendizaje en los niños
+\end{frame}
+
+\section{¿Cómo ayudar a los maestros?}
+\begin{frame}
+\frametitle{¿Cómo ayudar a los maestros?}
+Acelerando la capacitación de los mismos ya que en estos tiempos modernos los niños ya están muy familiarizados con la tecnología actual como son: los dispositivos modernos, el manejo de tecnologías de información
+\end{frame}
+
+\section{Adecuación de los Recursos Educativos}
+\begin{frame}
+\frametitle{Adecuación de los recursos educativos}
+En una escuela inclusiva, deben diseñarse recursos que estén adaptados de manera que puedan ser utilizados y captados por todo el alumnado.
+Deben contener estímulos multisensoriales y permitir la accesibilidad a todo el alumnado
+Las aplicaciones interactivas pueden mejorar la competencia básica en los niños con dificultades de aprendizaje.
+
+\end{frame}
+
+\section{Analisis}
+\begin{frame}
+\frametitle{Análisis}
+\begin{itemize}
+\item Con una estadistica descriptiva en un analisis de 200 estudiantes y lo que sobresale son problemas de lenguaje, transtornos de atencion.
+\item Los maestros cuentan con una gran cantidad de aplicaciones educativas en linea y se pueden acomodar a base de los intereses de los maestros sobre repositorios como hablidades matematicas, escritura, etc. 
+Además de ello se puede acomodar a sus necesidades ya que se puede conectar desde cualquier dispositivo.
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Ecosistema de apoyo}
+
+{\includegraphics[width=12cm]{img/eco.png}}
+
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Patrones educacionales}
+\begin{itemize}
+\item Un Patron es la solucion a un problema recurente
+\item  Un problema recurrente que presentan los alumnos es en la identificacion de silabas y una forma que el maestro noe ste encima de el todo el tiempo es por medio de la aplicacion en que el niño pueda usarla cuando el quiera y de manera ludica.
+\item Otro es hacer simples frases que trate el mal entendido de frases.
+
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Modelos de procesos para desarrolar aplicaciones educativas}
+\begin{itemize}
+\item Alisis de requerimientos
+\item Diseño
+\item Desarrollo
+\item Lanzamiento
+
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\section{Fases}
+\frametitle{Fases}
+{\includegraphics[width=5.0cm]{img/d.png}}
+{\includegraphics[width=5.0cm]{img/n.png}}
+{\includegraphics[width=5.0cm]{img/u.png}}
+{\includegraphics[width=5.0cm]{img/p.png}}
+\end{frame}
+
+\begin{frame}
+{\includegraphics[width=5.0cm]{img/g.png}}
+{\includegraphics[width=5.0cm]{img/a.png}}
+\end{frame}
+
+\begin{frame}
+\section{Capacitación docente}
+\frametitle{Capacitación docente}
+\begin{itemize}
+\item Los docentes recibieron charlas educativas e instructivas sobre el manejo de diversas tecnologías como las redes sociales las cuales son  empleadas para un óptimo desarrollo del aprendizaje en el estudiante .
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\section{Resultados de las fases y delas pruebas de usabilidad}
+\frametitle{Resultados de las fases y delas pruebas de usabilidad}
+\begin{itemize}
+\item Se aplicaron a 8 niños divididos en grupo A con quienes se trabajo un año y grupo B donde reforzo la atención teniendo como resultado una buena aceptación y mejorando su aprendizaje.
+{\includegraphics[width=5.0cm]{img/f.png}}
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\section{Mas aplicaciones}
+\frametitle{Mas aplicaciones}
+\begin{itemize}
+\item Kinect para personas con discapacidad auditiva
+{\includegraphics[width=5.0cm]{img/l.png}}
+\item Audiolibros para personas con debilidad visual
+{\includegraphics[width=5.0cm]{img/v.png}}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+
+\frametitle{}
+\textbf{¿Cual es la estrategia que se utiliza para el desarrollo de aplicaciones para niños con habilidades especiales?}
+\begin{itemize}
+\item Acompañar el desarrollo de la aplicación  con el progreso y maduración del estudiante
+\item Se requiere un equipo multidisciplinario, no solo tecnologos, sino también pedagogos , psicologos, entre otros
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{}
+
+\textbf{¿En que conviene utilizarse las pruebas de usabilidad?}
+\begin{itemize}
+\item Acompañar el desarrollo de la aplicación  con el progreso y maduración del estudiante
+\item Se requiere un equipo multidisciplinario, no solo tecnologos, sino también pedagogos , psicologos, entre otros
+\end{itemize}
+
+
+\end{frame}
+
+
+\begin{frame}
+    
+
+\frametitle{Conclusiones}
+\begin{itemize}
+\item Aportar una metodología de atención a niños con problemas de aprendizaje utilizando aplicaciones educativas
+\item Registrar lo requerimientos en base a la atención de estudiantes que enfrentan problemas con el aprendizaje
+\item Capacitar a los maestros en la utilización de estos recursos
+\end{itemize}
+
+\end{frame}
+
+\section{Referencias}
+% Marco de referencias
+\begin{frame}
+\frametitle{Referencias}
+\begin{itemize}
+\item  \href{https://recursos.portaleducoas.org/sites/default/files/VE14.061.pdf}{Diseño de recurso Didactico}
+\item  \href{http://sedici.unlp.edu.ar/bitstream/handle/10915/31833/Documento_completo.pdf?sequence=1&isAllowed=yy}{TCIs para educacion inclusiva}
+\item  \href{https://www.redalyc.org/pdf/688/68830444003.pdf}{El uso de un software educativo para promover el aprecio por la diversidad en alumnos de primaria}
+
+\end{itemize}
+\end{frame}
+\end{document}
